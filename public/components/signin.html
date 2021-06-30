@@ -1,0 +1,51 @@
+<style>
+    #form{
+      width:50vw;
+      height: 500px;
+      text-align: center;
+      font-size:large;
+  
+      border-radius: 10px;
+      padding: 5px;
+      color: wheat;
+      box-shadow: 5px 5px 10px gray;
+  
+      background-color:rgba(86, 121, 111, 0.5);
+      
+      
+  }
+  
+  #p{
+    width:98vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  #exampleInputEmail1{
+    font-size: smaller;
+  }
+  @media screen and (max-width: 700px) {
+    #form{
+      width:80vw;
+    }
+  }
+  </style>
+  <div id="p"> 
+    <form id="form" action="/">
+      <img src="../pics/login.png" style="margin-bottom: 5px;" width="150px" height="100px">
+      <h6 id="fp"></h6>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+  
+  </div

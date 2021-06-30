@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../app/chat.css">
+  <script defer src="../js/jquery-3.4.1.js"></script>
+  <script defer src="../js/popper.js"></script>
+  <script defer src="../js/bootstrap.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="../app/chat.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+</head>
+<body style="background-image: url('/pics/bgpic3.gif');">
+  <div id="navbar"></div>
+  <div id="content" style="min-height: 600px;">
+    <div id="loginBox" style="text-align: center; margin-top: 50px;">
+    <button id="btnStart"> GO ONLINE </button>
+  </div>
+
+    <div id="chatBox" style="text-align: center; padding: 10px;">
+      <input id="inpToUser" placeholder="Send to (default everyone)">
+      <input id="inpNewMsg" placeholder="New Message">
+      <button id="btnSendMsg">SEND</button>
+      </div>
+      <div>
+        <ul id="usersav" style="color: red; display: inline-flex; min-width: 700px;">
+        </ul>
+      </div>
+      <div style="display: flex; height: 800px;">
+        <div id="canvasbx">
+         
+        </div>
+        <div style="overflow: auto;">
+          <ul id="ulMsgs" style="text-align: center; color: orangered;"></ul>
+        </div>
+      </div>
+      
+    </div>
+
+
+      
+
+
+<div id="footer" class="text-muted bg-dark"></div>
+  
+
+</body>
+</html>

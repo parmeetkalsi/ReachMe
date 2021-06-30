@@ -1,0 +1,58 @@
+<div class="container my-2" style="min-height: 610px;">
+  <h1 class="h1 text-center" style="color: blueviolet;">Write Post</h1>
+
+  <!-- Write Post form -->
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="p-title">Post Title</label>
+      <input type="text"
+        class="form-control form-control-lg"
+        id="p-title"
+        placeholder="What is on your mind ?"
+        rows="3"
+      ></input>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select #Trend</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+      <option>social</option>
+      <option>tech</option>
+      <option>sports</option>
+      <option>entertainment</option>
+      <option>educational</option>
+      <option>fun</option>
+      <option>other</option>
+      </select>
+      </div>
+    <div class="form-group">
+      <label for="p-body">Post Body</label>
+      <textarea
+        class="form-control form-control-sm"
+        id="p-body"
+        placeholder="Tell us more about it"
+        rows="4"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="avatar" style="color: chartreuse;">Upload Photo</label>
+    <br>
+    <input type="file" name="avatar" id="avatar" placeholder="Photo" style="color: chartreuse;">
+    <br>
+    <!-- <button type="submit">Submit</button> -->
+      <!-- <label for="p-body" style="color: blue;">Attach Image</label>
+      <input type="file" name="myfile" style="color: blue; border-width: 5px; border-radius: 5px; border-color: blue;" />
+      <input type="submit" value="Upload Image" name="submit" style="color: blue;" class="btn btn-success"><br/><br/>
+ -->
+    </div>
+    <button type="submit" id="write-btn" class="btn btn-primary">Submit</button>
+  </form>
+  <!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+    <label for="avatar">Upload Photo</label>
+    <br>
+    <input type="file" name="avatar" id="avatar" placeholder="Profile Photo">
+    <br>
+    <button type="submit">Submit</button>
+  </form> -->
+</div>
+
+<script src="/app/write-posts.js"></script>
